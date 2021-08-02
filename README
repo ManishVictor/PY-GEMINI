@@ -1,0 +1,26 @@
+								PY-GEMINI
+								
+As the program finds the similar sequences i.e. either homologous or core genes the program has been named PY-GEMINI.
+(The program is useful for taxonomic analysis).For a taxon it will give you the homologous genes,core genes, recombinant
+genes, non-recombinant genes and generate Newick files for the core genes and non-recombinant genes. Alongwith, all the 
+above, it generates the files in a tabular form for all of the (core,recombinant,non-recombinant) genes in a manner where 
+identical index/position of the genes in different tables represent core genes, non-recombinant genes  
+ 
+The program has been tested only on linux like systems. Written in python3.
+
+To be installed:
+	Python3
+	Python packages:
+		1.Biopython
+	To be installed in the path: 
+		1.BLAST
+		2.CLUSTALW
+		3.FASTTREE
+		4.PhiPack
+
+	How to run the program:
+		$python3 pygemini.py [path of input directory ]
+		
+		then the program will ask for the number of cores you want to use after informing you about the number of cores in your 			system.
+	After the execution of the program the folder named 'FASTTREE' will be generated for both core and the non-recombinant genes that
+	has the .nwk files (core.nwk,nReco.nwk).
